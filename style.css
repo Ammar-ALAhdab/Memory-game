@@ -1,0 +1,246 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2196f32b;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* End of Global Rules */
+
+/* Start Splash Screen */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #810350b8;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash-screen .splash-content {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+
+.splash-screen .splash-content > input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #fff;
+  background-color: transparent;
+  outline: none;
+  display: block;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 28px;
+  padding: 0 10px;
+}
+
+.splash-screen .splash-content > input::placeholder {
+  color: #fff;
+  font-size: 28px;
+}
+.splash-screen .splash-content > input:focus::placeholder {
+  opacity: 0;
+}
+
+button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  width: 200px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  outline: 2px solid #000;
+  background-color: #ccc;
+
+}
+
+.splash-screen .splash-content p {
+  width: 500px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+header {
+  padding: 10px 30px;
+  margin: 10px auto 10px;
+  background-color: #dbd1e9;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+  width: 900px;
+  border: 5px solid #810350;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > span {
+  color: #810350;
+  font-weight: bold;
+  font-size: 24px;
+  width: fit-content;
+}
+
+header .game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  color: #810350;
+  font-weight: bold;
+}
+
+.container {
+  margin: 20px auto 0;
+  width: 750px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0;
+}
+
+.container.stop-clicking {
+  pointer-events: none;
+}
+
+.container .card {
+  height: 120px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  width: 120px;
+  max-width: 120px;
+  margin: 0 10px 20px;
+  position: relative;
+}
+
+.container .card .front {
+  background-color: #dbd1e9;
+  line-height: 120px;
+}
+.container .card .front::before {
+  content: "?";
+  color: #810350;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.container .card .back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .back img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid #810350;
+}
+
+.container .card.flipped , .container .card.match {
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+/* Start Results Screen Style */
+
+.results {
+  display: none;
+}
+
+.results caption {
+  color: #810350;
+  font-size: 32px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.results table {
+  width: 600px;
+  color: #810350;
+  background-color: #fff;
+  border-radius: 10px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.results table thead th:not(:first-child) {
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.results table thead th {
+  border-bottom: 2px solid #000;
+  padding: 10px;
+}
+
+.results table tbody td {
+  text-align: center;
+  padding: 10px;
+}
+
+.results table tbody td:not(:first-child) {
+  border-left: 2px solid #000;
+}
+.results table tbody tr:not(:last-child) td {
+  border-bottom: 2px solid #000;
+}
+
+/* End Results Screen Style */
+
+/* About US */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  color: #810350;
+  width: fit-content;
+}

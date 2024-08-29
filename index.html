@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/ico" href="images/icon.ico">
+  <title>Abode Memory Game</title>
+</head>
+
+<body>
+  <div class="splash-screen">
+    <div class="splash-content">
+      <input id="name" type="text" dir="rtl" placeholder="أدخل اسمك"></input>
+      <button id="results">عرض النتائج</button>
+      <button id="start">بدأ اللعبة</button>
+    </div>
+  </div>
+  <header>
+    <span>Abode Memory Game</span>
+    <div class="game-info">
+      <div class="timer" dir="rtl">الوقت المتبقي: <span></span></div>
+      <div class="wrong-tries" dir="rtl">محاولاتك الغير صحيحة: <span></span></div>
+      <div class="name" dir="rtl">مرحبا: <span></span></div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="card" data-img="a0">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a0.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a0">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a0.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a1">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a1.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a1">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a1.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a2">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a2.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a2">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a2.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a3">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a3.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a3">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a3.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a4">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a4.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a4">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a4.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a5">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a5.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a5">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a5.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a6">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a6.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a6">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a6.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a7">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a7.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a7">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a7.jpg" alt=""></div>
+    </div> 
+    <div class="card" data-img="a8">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a8.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a8">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a8.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a9">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a9.jpg" alt=""></div>
+    </div>
+    <div class="card" data-img="a9">
+      <div class="front face"></div>
+      <div class="back face"><img src="images/a9.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="results splash-screen">
+    <table>
+      <caption>أفضل اللاعبين</caption>
+      <thead>
+        <tr>
+          <tr>
+            <th>عدد الأخطاء</th>
+            <th>الوقت</th>
+            <th>اسم الاعب</th>
+            <th>المرتبة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="wrong-player"></td>
+            <td class="time-player"></td>
+            <td class="name-player"></td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="wrong-player"></td>
+            <td class="time-player"></td>
+            <td class="name-player"></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td class="wrong-player"></td>
+            <td class="time-player"></td>
+            <td class="name-player"></td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td class="wrong-player"></td>
+            <td class="time-player"></td>
+            <td class="name-player"></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td class="wrong-player"></td>
+            <td class="time-player"></td>
+            <td class="name-player"></td>
+            <td>5</td>
+          </tr>
+        </tbody>
+        </tr>
+    </table>
+    <button id="start2">بدأ اللعبة</button>
+  </div>
+  <div class="about">
+    Developed By: Ammar Rakan Al-Ahdab ©2022 &nbsp; &nbsp; &nbsp; Special Thanks For El-Zero Web Shcool
+  </div>
+  <audio id="success" src="audio/Correct Answer Sound Effect(MP3_320K).mp3" preload="auto"></audio>
+  <audio id="fail" src="audio/WrongBuzzer.mp3" preload="auto"></audio>
+  <audio id="click" src="audio/Google Pixel Notification Sound Effect.mp3" preload="auto"></audio>
+  <audio id="win" src="audio/Winning-sound-effect(MP3_320K).mp3" preload="auto"></audio>
+  <audio id="lose" src="audio/FAIL - SOUND EFFECT(MP3_160K).mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+
+</html>
